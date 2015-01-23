@@ -1,0 +1,183 @@
+2015/01/23 21:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/index.php?r=gii/
+---
+2015/01/24 01:27:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php:2)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\ride\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ride/site/index
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php (2)
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php (32)
+2015/01/24 01:27:19 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\ride\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ride/site/index
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php (3)
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php (32)
+2015/01/24 02:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/page?view=about
+---
+2015/01/24 02:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/%7Burl%7D
+---
+2015/01/24 02:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/%7Burl%7D
+---
+2015/01/24 02:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/contact
+---
+2015/01/24 02:37:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/contact
+---
+2015/01/24 02:39:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{url}".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('{url}')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('{url}')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/{url}')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/%7Burl%7D
+HTTP_REFERER=http://localhost/yii/ride/site/contact
+---
+2015/01/28 22:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "alert('solicitud enviada')".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('alert('solicitu...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('alert('solicitu...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/alert('sol...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/ride/site/alert('solicitud%20enviada')
+HTTP_REFERER=http://127.0.0.1/yii/ride/site/index
+---
+2015/01/29 01:26:01 [error] [php] Array to string conversion (C:\xampp\htdocs\yii\framework\zii\widgets\CBreadcrumbs.php:131)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#4 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#7 C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php(6): SiteController->endContent()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#11 C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php(98): SiteController->render()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\ride\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/ride/site/login
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php (48)
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php (98)
+2015/01/30 20:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "busqueda".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('busqueda')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('busqueda')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/busqueda')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/busqueda
+HTTP_REFERER=http://127.0.0.1/
+---
+2015/01/30 20:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "busqueda".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('busqueda')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('busqueda')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/busqueda')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/busqueda
+HTTP_REFERER=http://127.0.0.1/
+---
