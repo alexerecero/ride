@@ -157,7 +157,7 @@ $this->pageTitle=Yii::app()->name;
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
         <p><button class="btn btn-success" role="button" onclick="initialize();">Viajar</button></p>
-        <h6><small>publicado el dia ""</small></h6>
+        <h6><small>publicado el dia " "</small></h6>
       </div>
     </div>
 
