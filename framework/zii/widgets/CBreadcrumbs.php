@@ -52,7 +52,11 @@ class CBreadcrumbs extends CWidget
 	/**
 	 * @var array the HTML attributes for the breadcrumbs container tag.
 	 */
+<<<<<<< HEAD
 	public $htmlOptions=array('class'=>'breadcrumb');
+=======
+	public $htmlOptions=array('class'=>'breadcrumbs');
+>>>>>>> origin/master
 	/**
 	 * @var boolean whether to HTML encode the link labels. Defaults to true.
 	 */

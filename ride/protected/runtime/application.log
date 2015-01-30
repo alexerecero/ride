@@ -8,6 +8,7 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/yii/ride/site/index.php?r=gii/
 ---
+<<<<<<< HEAD
 2015/01/24 01:27:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php:2)
 Stack trace:
 #0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
@@ -181,3 +182,5 @@ Stack trace:
 REQUEST_URI=/site/busqueda
 HTTP_REFERER=http://127.0.0.1/
 ---
+=======
+>>>>>>> origin/master
