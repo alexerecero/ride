@@ -1,5 +1,59 @@
 <?php /* @var $this Controller */
 	Yii::app()->bootstrap->register();
+
+
+
+
+
+
+Yii::import('ext.gmap.*');
+
+function mapa()
+{
+    $gMap = new EGMap();
+
+    $gMap->setWidth(512);
+// it can also be called $gMap->height = 400;
+    $gMap->setHeight(400);
+    $gMap->zoom = 8;
+
+// set center to inca
+    $gMap->setCenter(39.719588117933185, 2.9087440013885635);
+
+// my house when i was a kid
+    $home = new EGMapCoord(39.720991014764536, 2.911801719665541);
+
+// my ex-school
+    $school = new EGMapCoord(39.719456079114956, 2.8979293346405166);
+
+
+// Initialize GMapDirection
+    $direction = new EGMapDirection($home, $school);
+
+    $direction->optimizeWaypoints = true;
+    $direction->provideRouteAlternatives = true;
+
+    $renderer = new EGMapDirectionRenderer();
+    $renderer->draggable = false;
+    $renderer->panel = "direction_pane";
+    $renderer->setPolylineOptions(array('strokeColor' => '#FFAA00'));
+
+    $direction->setRenderer($renderer);
+
+    $gMap->addDirection($direction);
+
+    $gMap->renderMap();
+
+}
+
+
+
+
+
+
+
+
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -18,26 +72,17 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUIOfJqvnh-24yqyT0Ojt9S_6SF09gemE&sensor=true" type="text/javascript"></script>
-	<script type="text/javascript"> 
-
-   var map = new GMap(document.getElementById("map")); 
-   map.setMapType(G_SATELLITE_TYPE); 
-map.addControl(new GLargeMapControl()); 
-   map.addControl(new GMapTypeControl()); 
-map.centerAndZoom(new GPoint (-3.688788414001465, 40.41996541363825), 3); 
-
-    </script> 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
 
 </head>
 
-<body onload="initialize()">
+<body>
 
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?> hola</div>
+		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
 	<div id="mainmenu-">
@@ -67,10 +112,11 @@ map.centerAndZoom(new GPoint (-3.688788414001465, 40.41996541363825), 3);
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Alex<br/>
 		All Rights Reserved.<br/>
-		<?php /*echo Yii::powered(); */?><div id="map" style="width: 400px; height: 300px"></div> 
+		<?php /*echo Yii::powered(); */?>
 	</div><!-- footer -->
 
 </div><!-- page -->
 
 </body>
 </html>
+ </script>

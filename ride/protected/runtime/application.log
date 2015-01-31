@@ -184,3 +184,105 @@ HTTP_REFERER=http://127.0.0.1/
 ---
 =======
 >>>>>>> origin/master
+2015/01/30 21:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?
+HTTP_REFERER=http://127.0.0.1/site/page?view=busqueda
+---
+2015/01/30 21:22:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?
+HTTP_REFERER=http://127.0.0.1/site/page?view=busqueda
+---
+2015/01/30 21:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?
+HTTP_REFERER=http://127.0.0.1/site/page?view=busqueda
+---
+2015/01/30 21:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?
+HTTP_REFERER=http://127.0.0.1/site/page?view=busqueda
+---
+2015/01/30 21:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\ride\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?
+HTTP_REFERER=http://127.0.0.1/site/page?view=busqueda
+---
+2015/01/31 02:34:09 [error] [php] include(EGMap.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php(16): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#8 C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php(6): SiteController->endContent()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#12 C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php(32): SiteController->render()
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\ride\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\main.php (16)
+in C:\xampp\htdocs\yii\ride\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\yii\ride\protected\controllers\SiteController.php (32)

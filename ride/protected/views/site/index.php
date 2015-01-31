@@ -75,8 +75,8 @@ $this->pageTitle=Yii::app()->name;
 
 	<hr>
     <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
+        <div> <?php   ?></div>
+        <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
         <p><a href="javascript: void(0)" onclick="alert('solicitud enviada')" class="btn btn-success" role="button">Viajar</a></p>
@@ -86,7 +86,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
 <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -97,7 +97,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
     <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -108,7 +108,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
 <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -119,7 +119,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
     <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -130,7 +130,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
 <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -141,7 +141,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
     <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -152,7 +152,7 @@ $this->pageTitle=Yii::app()->name;
     <hr>
 
 <div class="thumbnail">
-      <img src="..." alt="...">
+
       <div class="caption">
         <h3>"nombre" </h3>
         <p>viajará de "origen" a "destino" el día "fecha" a las "hora" quedan "numero" lugares disponbles</p>
@@ -167,4 +167,3 @@ $this->pageTitle=Yii::app()->name;
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
 </div>
-
