@@ -1,8 +1,9 @@
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <div class="carousel-inner">
         <div class="item active">
-            <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/51.jpg" class="img-responsive" alt="Imagen responsive">
+            <img id="fondo" src="<?php echo Yii::app()->request->baseUrl; ?>/css/51.jpg" class="img-responsive" alt="Imagen responsive">
             <div id="inicio" class="carousel-caption" style="padding-bottom: 20%">
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3">
