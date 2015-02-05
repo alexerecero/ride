@@ -3,9 +3,6 @@
         $this->redirect(Yii::app()->homeUrl.'site/login');
     }
 ?>
-
-
-
 <?php
 /* @var $this SiteController */
 
