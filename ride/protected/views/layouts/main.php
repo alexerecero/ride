@@ -80,15 +80,15 @@ function mapa()
 
     <style>
         .thumbnail{
-            color: #f5f5f5 !important;
-            background-color: darkmagenta !important;
+            color: darkmagenta !important;
+            border-color: darkmagenta !important;
         }
         .caption{
-            color: #f5f5f5 !important;
+            color: darkmagenta !important;
         }
         @media(max-width:767px){
             #menu{
-                display: none;
+                /*display: none;*/
             }
             #fondo{
                 display: none;
