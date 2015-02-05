@@ -80,8 +80,17 @@ function mapa()
 
     <style>
         @media(max-width:767px){
+            #menu{
+                display: none;
+            }
+            #fondo{
+                display: none;
+            }
+            body{
+                background-color: darkmagenta !important;
+            }
             #inicio{
-                padding-bottom: 0;
+                padding-top: 0;
             }
             #logoP{
                 visibility: hidden;
@@ -89,8 +98,9 @@ function mapa()
         }
         @media(min-width:768px){
             #inicio{
-                padding-bottom: 0;
+                padding-top: 0;
             }
+
         }
         @media(min-width:992px){
             #inicio{
@@ -108,7 +118,7 @@ function mapa()
 
 <body>
 
-<div id="mainmenu-">
+<div id="menu">
     <?php $this->widget('zii.widgets.CMenu',array(
         'htmlOptions' => array('class' => 'nav nav-tabs nav-justified'),
         'items'=>array(
@@ -121,34 +131,16 @@ function mapa()
         ),
     )); ?>
 </div><!-- mainmenu -->
-<?php if(isset($this->breadcrumbs)):?>
-    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+<?php /*if(isset($this->breadcrumbs)):*/?><!--
+    <?php /*$this->widget('zii.widgets.CBreadcrumbs', array(
         'htmlOptions' => array('class' => 'breadcrumb'),
         'links'=>$this->breadcrumbs,
-    )); ?><!-- breadcrumbs -->
-<?php endif?>
+    )); */?><!-- breadcrumbs -->
+<?php /*endif*/?>
 
 <?php echo $content; ?>
 
 <div class="clear"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Alex<br/>
