@@ -1,53 +1,69 @@
-<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/css/51.jpg" class="img-responsive" alt="Imagen responsive">
+            <div id="inicio" class="carousel-caption" style="padding-bottom: 20%">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 col-sm-6 col-sm-offset-3">
+                        <img id="logoP" onclick="location.href='<?php echo Yii::app()->request->baseUrl; ?>/site/index'" src="<?php echo Yii::app()->request->baseUrl; ?>/css/logo.png" class="img-responsive" alt="Imagen responsive">
 
-<h1>Login</h1>
 
-<p>Please fill out the following form with your login credentials:</p>
+                        <?php $form=$this->beginWidget('CActiveForm', array(
+                            'id'=>'login-form',
+                            'enableClientValidation'=>true,
+                            'clientOptions'=>array(
+                                'validateOnSubmit'=>true,
+                            ),
+                        )); ?>
+                        <div class="form-group">
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
+                            <?php echo $form->labelEx($model,'username'); ?>
+                            <?php echo $form->textField($model,'username'); ?>
+                            <?php echo $form->error($model,'username'); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+                        </div>
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model,'password'); ?>
+                            <?php echo $form->passwordField($model,'password'); ?>
+                            <?php echo $form->error($model,'password'); ?>
+                        </div>
+                        <div class="form-group">
+                            <?php echo $form->checkBox($model,'rememberMe'); ?>
+                            <?php echo $form->label($model,'rememberMe'); ?>
+                            <?php echo $form->error($model,'rememberMe'); ?>
+                        </div>
+                        <button type="submit">Entrar</button>
+<!--                        --><?php //echo CHtml::submitButton('Login'); ?>
+                        <?php $this->endWidget(); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
 
-<?php $this->endWidget(); ?>
-</div><!-- form -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Wrapper for slides -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

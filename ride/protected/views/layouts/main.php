@@ -59,6 +59,7 @@ function mapa()
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="language" content="en">
 
 	<!-- blueprint CSS framework -->
@@ -70,44 +71,84 @@ function mapa()
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <style>
+        @media(max-width:767px){
+            #inicio{
+                padding-bottom: 0;
+            }
+            #logoP{
+                visibility: hidden;
+            }
+        }
+        @media(min-width:768px){
+            #inicio{
+                padding-bottom: 0;
+            }
+        }
+        @media(min-width:992px){
+            #inicio{
+                padding-bottom: 10%;}
+            }
+        }
+        @media(min-width:1200px){
+            #inicio{
+                padding-bottom: 20%;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="container" id="page">
+<div id="mainmenu-">
+    <?php $this->widget('zii.widgets.CMenu',array(
+        'htmlOptions' => array('class' => 'nav nav-tabs nav-justified'),
+        'items'=>array(
+            array('label'=>'Home', 'url'=>array('/site/index')),
+            array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+            array('label'=>'Contact', 'url'=>array('/site/contact')),
+            array('label'=>'Busqueda', 'url'=>array('/site/page', 'view'=>'busqueda')),
+            array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+            array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+        ),
+    )); ?>
+</div><!-- mainmenu -->
+<?php if(isset($this->breadcrumbs)):?>
+    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+        'htmlOptions' => array('class' => 'breadcrumb'),
+        'links'=>$this->breadcrumbs,
+    )); ?><!-- breadcrumbs -->
+<?php endif?>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+<?php echo $content; ?>
 
-	<div id="mainmenu-">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'htmlOptions' => array('class' => 'nav nav-tabs'),
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Busqueda', 'url'=>array('/site/page', 'view'=>'busqueda')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'htmlOptions' => array('class' => 'breadcrumb'),
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+<div class="clear"></div>
 
-	<?php echo $content; ?>
 
-	<div class="clear"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Alex<br/>
