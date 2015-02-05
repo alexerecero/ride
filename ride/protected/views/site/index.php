@@ -9,11 +9,26 @@
 ?>
 
 
-<div class="container">
+<div class="container"><br>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agregarViaje">
-        Agregar un nuevo viaje
-    </button>
+   <div class="row">
+       <div class="col-lg-4 col-lg-offset-4">
+           <center>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agregarViaje">
+                    Agregar un nuevo viaje
+                </button>
+           </center>
+       </div>
+       <div class="col-lg-4">
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="Buscar salida...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Ir!</button>
+              </span>
+           </div><!-- /input-group -->
+       </div>
+   </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="agregarViaje" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

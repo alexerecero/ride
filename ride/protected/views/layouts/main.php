@@ -79,15 +79,19 @@ function mapa()
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <style>
+        .thumbnail{
+            color: #f5f5f5 !important;
+            background-color: darkmagenta !important;
+        }
+        .caption{
+            color: #f5f5f5 !important;
+        }
         @media(max-width:767px){
             #menu{
                 display: none;
             }
             #fondo{
                 display: none;
-            }
-            body{
-                background-color: darkmagenta !important;
             }
             #inicio{
                 padding-top: 0;
@@ -100,6 +104,16 @@ function mapa()
             #inicio{
                 padding-top: 0;
             }
+            .nav-tabs.nav-justified > .active > a,
+            .nav-tabs.nav-justified > .active > a:hover,
+            .nav-tabs.nav-justified > .active > a:focus {
+                border: 1px solid darkmagenta !important;
+                border-bottom: none !important;
+            }
+
+            .nav-tabs.nav-justified > li > a {
+                border-bottom: 1px solid darkmagenta !important;
+                border-radius: 4px 4px 0 0;
 
         }
         @media(min-width:992px){
